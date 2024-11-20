@@ -40,7 +40,7 @@ public class SendingFormTest {
         driver.findElement(By.cssSelector("button.button_view_extra")).click();
         WebElement element = driver.findElement(By.cssSelector("[data-test-id=\"order-success\"]"));
         String actualMessage = element.getText().trim();
-        Assertions.assertEquals(  "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualMessage);
+        Assertions.assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualMessage);
     }
 
 }
